@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSR Work Samples | Mary Rose</title>
+<style>
+:root {
+    --teal: #287f79;
+    --dark: #213e3d;
+    --cream: #f7f4ee;
+    --border: #e4e8e5;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    background: var(--cream);
+    line-height: 1.6;
+}
+header {
+    background: white;
+    border-bottom: 1px solid var(--border);
+    padding: 18px 5%;
+}
+nav {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.brand {
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--dark);
+    text-decoration: none;
+}
+.back {
+    color: var(--teal);
+    text-decoration: none;
+    font-weight: 700;
+}
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 55px 22px 80px;
+}
+.intro {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 45px;
+}
+.eyebrow {
+    color: var(--teal);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.15;
+    margin: 12px 0 18px;
+}
+.intro p {
+    color: #536765;
+    font-size: 17px;
+}
+.case-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: clamp(20px, 4vw, 38px);
+    margin-bottom: 28px;
+    box-shadow: 0 10px 28px rgba(25,55,50,.04);
+}
+.case-number {
+    color: var(--teal);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.case-heading h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(25px, 3vw, 34px);
+    margin: 6px 0 24px;
+}
+.case-details {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 28px;
+}
+.case-details > div {
+    background: #f5f8f6;
+    padding: 19px;
+    border-radius: 14px;
+}
+.case-details h3 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: var(--teal);
+}
+.case-details p {
+    margin: 0;
+    font-size: 14px;
+}
+.samples-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+.sample {
+    margin: 0;
+    min-width: 0;
+}
+.sample figcaption {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.sample a {
+    display: block;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+.sample img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.sample a:hover {
+    border-color: var(--teal);
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+.view-hint {
+    display: block;
+    color: #6c7e7b;
+    font-size: 12px;
+    margin-top: 8px;
+}
+.missing { color: #b34343; }
+footer {
+    text-align: center;
+    color: #73817f;
+    font-size: 13px;
+    padding: 0 20px 30px;
+}
+@media (max-width: 760px) {
+    .case-details, .samples-grid {
+        grid-template-columns: 1fr;
+    }
+    main { padding-top: 35px; }
+}
+</style>
+
+<style id="clean-email-gallery-styles">
+.clean-email-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 28px;
+  align-items: start;
+}
+.email-example {
+  min-width: 0;
+}
+.email-example h3 {
+  margin: 0 0 14px;
+  font-size: 20px;
+  color: #173c3b;
+}
+.email-example a {
+  display: block;
+}
+.email-example img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e2e8e5;
+  border-radius: 12px;
+  background: white;
+}
+@media (max-width: 760px) {
+  .clean-email-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<style id="email-samples-final">
+.email-sample-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 28px;
+  align-items: start;
+}
+
+.email-sample {
+  min-width: 0;
+}
+
+.email-sample h3 {
+  color: #176d69;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.email-sample a {
+  display: block;
+  border: 1px solid #e2e8e5;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+}
+
+.email-sample img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.email-sample p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #617675;
+}
+
+@media (max-width: 800px) {
+  .email-sample-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <a class="brand" href="index.html">MARY ROSE.</a>
+        <a class="back" href="index.html">← Back to Portfolio</a>
+    </nav>
+</header>
+<main>
+    <section class="intro">
+        <span class="eyebrow">Portfolio / Customer Support</span>
+        <h1>Customer Support Work Samples</h1>
+        <p>Real examples of how I handle customer concerns with empathy,
+        clear communication, and practical solutions. Personal customer
+        information has been hidden.</p>
+    </section>
+    
+    <article class="case-card">
+        <div class="case-heading">
+            <span class="case-number">CASE 01</span>
+            <h2>Order Status &amp; Delivery Delay</h2>
+        </div>
+
+        <div class="case-details">
+            <div><h3>Situation</h3><p>A customer contacted support because their order had not arrived.</p></div>
+            <div><h3>What I Did</h3><p>Reviewed the order status, explained the fulfillment delay, and offered available options.</p></div>
+            <div><h3>Outcome</h3><p>The customer was given clear information and the choice to continue waiting or request a refund.</p></div>
+        </div>
+
+        
+    <div class="email-sample-grid">
+      <div class="email-sample">
+        <h3>Customer Message</h3>
+        <a href="csr-images/case1-customer.png" target="_blank"
+           rel="noopener noreferrer">
+          <img src="csr-images/case1-customer.png"
+               alt="Customer message for case 1"
+               loading="lazy">
+        </a>
+        <p>Click to view full size</p>
+      </div>
+      <div class="email-sample">
+        <h3>My Response</h3>
+        <a href="csr-images/case1-response.png?v=clean20261103" target="_blank"
+           rel="noopener noreferrer">
+          <img src="csr-images/case1-response.png?v=clean20261103"
+               alt="Customer support response for case 1"
+               loading="lazy">
+        </a>
+        <p>Click to view full size</p>
+      </div>
+    </div>
+    </article>
+    
+
+    <article class="case-card">
+        <div class="case-heading">
+            <span class="case-number">CASE 02</span>
+            <h2>Subscription Cancellation Concern</h2>
+        </div>
+
+        <div class="case-details">
+            <div><h3>Situation</h3><p>A customer believed their subscription had already been canceled but was still being charged.</p></div>
+            <div><h3>What I Did</h3><p>Verified the active subscription, explained the order status, and requested confirmation before cancellation.</p></div>
+            <div><h3>Outcome</h3><p>The customer received an explanation of the account status and the next steps for cancellation.</p></div>
+        </div>
+
+        
+    <div class="email-sample-grid">
+      <div class="email-sample">
+        <h3>Customer Message</h3>
+        <a href="csr-images/case2-customer.png" target="_blank"
+           rel="noopener noreferrer">
+          <img src="csr-images/case2-customer.png"
+               alt="Customer message for case 2"
+               loading="lazy">
+        </a>
+        <p>Click to view full size</p>
+      </div>
+      <div class="email-sample">
+        <h3>My Response</h3>
+        <a href="csr-images/case2-response.png?v=clean20261103" target="_blank"
+           rel="noopener noreferrer">
+          <img src="csr-images/case2-response.png?v=clean20261103"
+               alt="Customer support response for case 2"
+               loading="lazy">
+        </a>
+        <p>Click to view full size</p>
+      </div>
+    </div>
+    </article>
+    
+
+    <article class="case-card">
+        <div class="case-heading">
+            <span class="case-number">CASE 03</span>
+            <h2>Damaged Product Concern</h2>
+        </div>
+
+        <div class="case-details">
+            <div><h3>Situation</h3><p>A customer reported receiving melted gummies and requested assistance.</p></div>
+            <div><h3>What I Did</h3><p>Apologized and requested the order number, product photographs, and relevant packaging information.</p></div>
+            <div><h3>Outcome</h3><p>The customer was guided through the information needed to investigate and resolve the concern.</p></div>
+        </div>
+
+        
+    <div class="email-sample-grid">
+      <div class="email-sample">
+        <h3>Customer Message</h3>
+        <a href="csr-images/case3-customer.png" target="_blank"
+           rel="noopener noreferrer">
+          <img src="csr-images/case3-customer.png"
+               alt="Customer message for case 3"
+               loading="lazy">
+        </a>
+        <p>Click to view full size</p>
+      </div>
+      <div class="email-sample">
+        <h3>My Response</h3>
+        <a href="csr-images/case3-response.png?v=clean20261103" target="_blank"
+           rel="noopener noreferrer">
+          <img src="csr-images/case3-response.png?v=clean20261103"
+               alt="Customer support response for case 3"
+               loading="lazy">
+        </a>
+        <p>Click to view full size</p>
+      </div>
+    </div>
+    </article>
+    
+</main>
+<footer>Mary Rose | Customer Support Portfolio</footer>
+</body>
+</html>
